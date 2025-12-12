@@ -1,0 +1,181 @@
+body {
+    background-color: #f4f7f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+p.subtitle {
+    text-align: center;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* --- Review Form --- */
+.review-form-container {
+    padding: 25px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.05);
+}
+
+.review-form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+    font-size: 16px;
+}
+
+.review-form-container button {
+    background-color: #3498db;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.review-form-container button:hover:not(:disabled) {
+    background-color: #2980b9;
+}
+
+.review-form-container button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* --- Review List --- */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+}
+
+.review-card {
+    border: 1px solid #e0e0e0;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+    position: relative;
+    background-color: #fff;
+}
+
+.review-card h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #34495e;
+    font-size: 1.1em;
+}
+
+.review-text {
+    font-style: italic;
+    color: #555;
+    margin-bottom: 15px;
+    border-left: 3px solid #eee;
+    padding-left: 10px;
+}
+
+.key-points-list {
+    padding-left: 20px;
+    margin-bottom: 0;
+}
+
+.key-points-list li {
+    margin-bottom: 4px;
+    font-size: 0.9em;
+}
+
+small {
+    display: block;
+    margin-top: 10px;
+    color: #95a5a6;
+    font-size: 0.8em;
+}
+
+/* --- Sentiment Badge --- */
+.sentiment-badge {
+    position: absolute;
+    top: -10px;
+    right: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: white;
+    font-size: 0.85em;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.sentiment-positive {
+    background-color: #27ae60; /* Hijau */
+}
+
+.sentiment-negative {
+    background-color: #e74c3c; /* Merah */
+}
+
+.sentiment-neutral {
+    background-color: #f39c12; /* Kuning */
+}
+
+/* --- Utility --- */
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+.spinner {
+    border: 4px solid #f3f3f3; 
+    border-top: 4px solid #3498db; 
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.error-message {
+    color: #e74c3c;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px dashed #e74c3c;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0));
+}
