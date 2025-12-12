@@ -3,9 +3,8 @@
 Proyek ini adalah implementasi dari **Product Review Analyzer** yang dirancang untuk menganalisis ulasan produk yang dimasukkan pengguna, menentukan sentimennya, dan mengekstrak poin-poin penting menggunakan teknologi AI/NLP.
 
 ## Informasi Pengumpulan Tugas
-| :--- | :--- |
-| **Nama** | Rafael Abimanyu Ratmoko |
-| **NIM** | 123140134 |
+Nama   : Rafael Abimanyu Ratmoko
+NIM    : 123140134
 
 ---
 
